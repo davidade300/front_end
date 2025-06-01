@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | union(back/front) pt 2</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off"> <!--action="caminho/arquivo"-->
+        <p>O Meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" value="David">
+        </p>
+
+        <p>
+            <label for="dev1">is Dev1:</label>
+            <input type="checkbox" id="dev1" name="dev1" value="sim">
+            <label for="dev2">is Dev2:</label>
+            <input type="checkbox" id="dev2" name="dev2" value="sim">
+            <label for="dev3">is Dev3:</label>
+            <input type="checkbox" id="dev3" name="dev3" value="sim">
+        </p>
+
+        <p>
+            Gênero:<br>
+            <label for="feminino">feminino:</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="masculino">masculino:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="outro_outra">Outro:</label>
+            <input type="radio" id="outro_outra" name="genero" value="outro_outra">
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+            <!--todo botão submit dentro de um form envia ele e todo reset reseta o form -->
+        </p>
+    </form>
+</body>
+
+</html>
