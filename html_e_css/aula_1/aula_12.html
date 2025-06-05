@@ -43,11 +43,79 @@
             <input type="radio" id="outro_outra" name="genero" value="outro_outra">
         </p>
 
+        <!--Aula 13-->
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2025-05-31">
+        </p>
+
+        <p>
+            <label for="datetime">Datetime-local:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2025-05-31T20:00">
+        </p>
+
+        <p>
+            <label for="time">time:</label>
+            <input type="time" id="time" name="time" value="20:00:01">
+        </p>
+
+        <p>
+            <label for="datetime">color:</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+        </p>
+
+        <p>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="ex.: email@email.com">
+        </p>
+
+        <p>
+            <label for="file">Sua Foto:</label>
+            <input type="file" id="file" name="file" accept=".png, .svg, images/*" multiple>
+        </p>
+
+        <p>
+            <label for="password">Sua Senha:</label>
+            <input type="password" id="password" name="file" placeholder="Digite a sua senha">
+        </p>
+
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2">
+        </p>
+
+        <p>
+            <label for="select">Selecione alguma opção:</label>
+            <select id="select" name="select" multiple>
+                <optgroup label="Teste">
+                    <option value="qualquer 1" label=" label 1" selected></option>
+                    <option value="qualquer 2" label=" label 2"></option>
+                    <option value="qualquer 3" label=" label 3" disabled></option>
+                    <option value="qualquer 4" label=" label 4"></option>
+                </optgroup>
+
+                <optgroup label="Teste 2">
+                    <option value="qualquer 1" label=" label 1"></option>
+                    <option value="qualquer 2" label=" label 2"></option>
+                    <option value="qualquer 3" label=" label 3"></option>
+                    <option value="qualquer 4" label=" label 4"></option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">textarea:</label>
+            <textarea rows="3" cols="9">valor pre escrito</textarea>
+        </p>
+
         <p>
             <button type="reset">Reset</button>
             <button type="submit">Enviar</button>
             <!--todo botão submit dentro de um form envia ele e todo reset reseta o form -->
+
         </p>
+
+
     </form>
 </body>
 
