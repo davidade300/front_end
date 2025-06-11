@@ -1,5 +1,25 @@
-.caixa {
-    background-color: red;
-    height: 120px;
-    width: 120px;
+* {
+    /*pardão para não ter que por em todos os elementos*/
+    margin: 0;
+    padding: 0;
+}
+
+
+.pai h1+p {
+    /* adjascent sibling selector*/
+    color: red;
+}
+
+.pai p+h1 {
+    /* adjascent sibling selector*/
+    color: red;
+}
+
+.heading {
+    transition: all 500ms ease-in-out;
+}
+
+.heading:hover {
+    background: red;
+
 }
